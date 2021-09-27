@@ -19,6 +19,12 @@ namespace CountDownTimer
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int second = 10;
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
 
         }
     }
