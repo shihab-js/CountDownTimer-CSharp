@@ -28,6 +28,11 @@ namespace CountDownTimer
         {
             label1.Text = seconds--.ToString();
 
+            if (seconds < 0)
+            {
+                timer1.Stop();
+            }
+
         }
     }
 }
