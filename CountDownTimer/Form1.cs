@@ -12,6 +12,7 @@ namespace CountDownTimer
 {
     public partial class Form1 : Form
     {
+        int seconds = 0;
         public Form1()
         {
             InitializeComponent();
@@ -19,12 +20,13 @@ namespace CountDownTimer
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int second = 10;
+            seconds = 10;
             timer1.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            label1.Text = seconds--.ToString();
 
         }
     }
